@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use API Calling Using DOM Manipulation</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        #city-input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        #search-button {
+            padding: 10px 15px;
+            font-size: 16px;
+            border: none;
+            background-color: #5cb85c;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #search-button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <input id="city-input" type="text" placeholder="Enter city Name" style="margin-bottom: 10px; width: 200px;"/> <!-- Inline CSS -->
+    <button id="search-button">Search</button>
+
+    <div>
+        <h3 id="city-name">Canada, Ontario - Toronto</h3>
+        <h6 id="city-time">localtime</h6>
+        <p id="city-temp">13</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
