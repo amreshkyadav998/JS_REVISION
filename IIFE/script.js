@@ -8,9 +8,12 @@
 (() => console.log("Hello everyone! How are you")) ();
 
 
+
 //practical example
 
-const data = (async () => await fetch())();
+const data = (async () => await fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(response => response.json())
+.then(json => console.log(json)))();
 
 //ATM Design 
 const atm = (function (initialBalance) {
